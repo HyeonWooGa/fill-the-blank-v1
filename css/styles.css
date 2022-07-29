@@ -1,0 +1,15 @@
+@import "reset.css";
+
+/* Components */
+@import "components/nav-bar.css";
+
+/* Screens */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(226, 220, 200);
+  background-color: rgb(16, 15, 15);
+  height: 1000vh;
+  width: 100vw;
+}
