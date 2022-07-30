@@ -1,18 +1,37 @@
 main {
   margin: 50px 25px;
   padding: 50px 25px;
-  line-height: 150%;
+  line-height: 200%;
   border: 1px solid rgba(226, 220, 200, 0.4);
   border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0);
+  width: 700px;
 }
 
 input {
-  background-color: #0f3d3e;
+  background-color: #5a8f7b;
   color: rgb(226, 220, 200);
   border: 1px solid rgba(226, 220, 200, 0.4);
   border-radius: 5px;
   width: 80px;
   text-align: center;
+}
+
+.long {
+  width: 140px;
+}
+
+.big {
+  height: 20px;
+  font-size: 18px;
+}
+
+input:focus-within {
+  background-color: rgba(226, 220, 200, 0.8);
+  color: #0f3d3e;
 }
 
 .small-title {
@@ -27,9 +46,12 @@ button {
   margin-top: 30px;
   width: 80px;
   height: 40px;
-  margin-left: 20px;
-  background-color: #0f3d3e;
+  background-color: #5a8f7b;
   color: rgb(226, 220, 200);
   border: 1px solid rgba(226, 220, 200, 0.4);
   border-radius: 5px;
+}
+
+#quiz-form {
+  margin-left: 30px;
 }

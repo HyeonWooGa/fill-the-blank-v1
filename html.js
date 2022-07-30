@@ -19,6 +19,8 @@ const main = quizFrom.querySelector("#main");
 const id = quizFrom.querySelector("#id");
 const classs = quizFrom.querySelector("#classs");
 
+const buttonn = document.querySelector("button");
+
 function handleSubmit(event) {
   event.preventDefault();
   if (tree.value !== "트리") tree.value = "";
@@ -39,6 +41,12 @@ function handleSubmit(event) {
   if (main.value !== "<main>") main.value = "";
   if (id.value !== "id") id.value = "";
   if (classs.value !== "class") classs.value = "";
+  buttonn.style.backgroundColor = "#E2DCC8";
+  buttonn.style.color = "#5a8f7b";
+  setTimeout(() => {
+    buttonn.style.backgroundColor = "#5a8f7b";
+    buttonn.style.color = "#E2DCC8";
+  }, 10);
 }
 
 quizFrom.addEventListener("submit", handleSubmit);
