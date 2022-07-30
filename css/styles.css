@@ -1,7 +1,9 @@
+/* 색상 참고 : https://colorhunt.co/palette/100f0f0f3d3ee2dcc8f1f1f1 */
 @import "reset.css";
 
 /* Components */
 @import "components/nav-bar.css";
+@import "components/main.css";
 
 /* Screens */
 

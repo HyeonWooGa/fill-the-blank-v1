@@ -1,0 +1,35 @@
+main {
+  margin: 50px 25px;
+  padding: 50px 25px;
+  line-height: 150%;
+  border: 1px solid rgba(226, 220, 200, 0.4);
+  border-radius: 30px;
+}
+
+input {
+  background-color: #0f3d3e;
+  color: rgb(226, 220, 200);
+  border: 1px solid rgba(226, 220, 200, 0.4);
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+}
+
+.small-title {
+  font-size: 24px;
+}
+
+.lines {
+  margin-left: 20px;
+}
+
+button {
+  margin-top: 30px;
+  width: 80px;
+  height: 40px;
+  margin-left: 20px;
+  background-color: #0f3d3e;
+  color: rgb(226, 220, 200);
+  border: 1px solid rgba(226, 220, 200, 0.4);
+  border-radius: 5px;
+}
