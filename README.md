@@ -2,7 +2,7 @@
 
 ## Contributor
 
-- @HyeonWooGa (박연우
+- @HyeonWooGa (박연우)
 
 ## Tech Requirement
 
