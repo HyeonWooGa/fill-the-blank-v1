@@ -6,28 +6,34 @@ const justifyContent = quizFrom.querySelector("#justify-content");
 const alignItem = quizFrom.querySelector("#align-item");
 const button = document.querySelector("button");
 
-const inputData = [flex, flexDirection, justifyContent, alignItem, button]
-const answer = ["flex", "flex-direction", "justify=content", "align-item", "button"]
+// const inputData = [flex, flexDirection, justifyContent, alignItem, button]
+// const answer = ["flex", "flex-direction", "justify=content", "align-item", "button"]
 
 
 // 정답 채점 함수 만들기.
 // 아래 함수에서 this를 어떻게 사용하면 해결이 될 듯 한데.. 고민중입니다 ㅠ
 
 // function grading(input, answer) {
-//   if (input.value === answer) flex.classList.add('success');
+//   if (input.value === answer) input.classList.add('success');
 //   else {
-//     flex.classList.add('Fail');
-//     flex.value = "오답입니다.";
+//     input.classList.add('Fail');
+//     input.value = "오답입니다.";
 //   }
 // }
 
 function handleSubmit(event) {
   event.preventDefault();
 
-  if (flex.value !== "flex") {
-    flex.classList.add('Fail');
-    flex.value = "오답입니다.";
-  } else flex.classList.add('success');
+  // grading(inputData, answer)
+  if (flex.value === "flex") flex.classList.add('success');
+    else if (flex.value === "") {
+      flex.classList.add('blank');
+      flex.value= "빈칸입니다.";
+    }
+    else {
+      flex.classList.add('Fail');
+      flex.value = "오답입니다.";
+    }
 
   if (flexDirection.value !== "flex-direction") {
     flexDirection.classList.add('Fail');
