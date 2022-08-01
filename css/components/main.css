@@ -21,6 +21,28 @@ input {
 
 }
 
+input.blank {
+  animation: up-down 0.4s;
+}
+
+@keyframes up-down{
+  0%{
+    transform: translatey(0px);
+  }
+  25%{
+    transform: translatey(-8px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-6px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
 input.Fail {
   animation: shake 0.5s;
   transition: all 1s;
