@@ -16,9 +16,68 @@ input {
   color: rgb(226, 220, 200);
   border: 1px solid rgba(226, 220, 200, 0.4);
   border-radius: 5px;
-  width: 80px;
+  width: 100px;
   text-align: center;
+
 }
+
+input.blank {
+  animation: up-down 0.4s;
+}
+
+@keyframes up-down{
+  0%{
+    transform: translatey(0px);
+  }
+  25%{
+    transform: translatey(-8px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-6px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+input.Fail {
+  animation: shake 0.5s;
+  transition: all 1s;
+  background-color: indianred;
+  color: #fff;
+}
+
+input.success {
+  transition: all 1s;
+  background-color: rgb(165, 221, 165);
+  color : rgb(99, 91, 91);
+}
+
+@keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-8deg);
+    }
+  
+    50% {
+      transform: rotate(8deg);
+    }
+    
+    75% {
+      transform: rotate(-8deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
 
 .long {
   width: 140px;
