@@ -12,7 +12,7 @@ const answer = ["flex", "flex-direction", "justify-content", "align-item", "butt
 function grading(input, answer) {
   for(let i = 0; i < input.length; i++) {
     if(input[i].value === answer[i]) {
-      inputData[i].classList.add("succes")
+      inputData[i].classList.add("success")
     } else if (input[i].value === "") {
       inputData[i].classList.add("blank")
       inputData[i].value = "빈칸입니다.";
