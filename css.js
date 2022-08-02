@@ -15,7 +15,7 @@ function grading(input, answer) {
       inputData[i].classList.remove("blank");
       inputData[i].classList.remove("Fail");
       inputData[i].classList.add("success");
-    } else if (input[i].value === "") {
+    } else if (input[i].value === "" || input[i].value ==="빈칸입니다.") {
       inputData[i].classList.remove("success")
       inputData[i].classList.remove("Fail")
       inputData[i].classList.add("blank")
