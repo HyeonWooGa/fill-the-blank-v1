@@ -1,13 +1,18 @@
 const quizFrom = document.getElementById("quiz-form");
+const answerInput = quizFrom.querySelectorAll("input");
 
-const flex = quizFrom.querySelector("#flex");
-const flexDirection = quizFrom.querySelector("#flex-direction");
-const justifyContent = quizFrom.querySelector("#justify-content");
-const alignItem = quizFrom.querySelector("#align-item");
-const button = document.querySelector("button");
+const textEle = [];
+const inputData = [];
 
-const inputData = [flex, flexDirection, justifyContent, alignItem, button];
+for (let i = 0; i < answerInput.length; i++) {
+  textEle.push(answerInput[i].id);
+  let ele = textEle[i];
+  ele = quizFrom.querySelector(`#${ele}`);
+  inputData.push(ele);
+}
 const answer = ["flex", "flex-direction", "justify-content", "align-item", "button"]
+
+const button = document.querySelector("button");
 
 function grading(input, answer) {
   for(let i = 0; i < input.length; i++) {
@@ -48,9 +53,9 @@ function handleSubmit(event) {
   }, 10);
 }
 
-flex.addEventListener("click", inputWipe);
-flexDirection.addEventListener("click", inputWipe);
-justifyContent.addEventListener("click", inputWipe);
-alignItem.addEventListener("click", inputWipe);
-button.addEventListener("click", inputWipe);
+for (let i = 0; i < answerInput.length; i++) {
+  let ele = answerInput[i];
+  ele.addEventListener("click", inputWipe);
+}
+
 quizFrom.addEventListener("submit", handleSubmit);
