@@ -8,7 +8,7 @@ function handleSubmit(event) {
   event.preventDefault();
   if (brainStorm.value === "브레인스톰") {
     brainStorm.classList.add("success");
-    brainStorm.classList.remoce("blank");
+    brainStorm.classList.remove("blank");
     brainStorm.classList.remove("Fail");
   }
   else if (brainStorm.value === "" || brainStorm.value === "빈칸입니다.") {
@@ -30,5 +30,14 @@ function handleSubmit(event) {
     button.style.color = "#E2DCC8";
   }, 10);
 }
+
+function inputWipe(event) {
+  event.target.value = "";
+  event.target.classList.remove("success")
+  event.target.classList.remove("blank")
+  event.target.classList.remove("Fail")
+}
+
+brainStorm.addEventListener("click", inputWipe);
 
 quizFrom.addEventListener("submit", handleSubmit);
